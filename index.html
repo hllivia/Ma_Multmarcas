@@ -3,1126 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MA NultMarkas Store</title>
-    <meta 
-        name="description"
-        content="MA MultMarkas - Moda masculina, feminina, acessórios e artigos esportivos."
-        >
-    <link rel="stylesheet" href="style.css">
-
+    <title>MA MultMarkas Store</title>
+    <meta name="description" content="MA MultMarkas - Moda masculina, feminina, acessórios e artigos esportivos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-
 <body>
-    <!-- =====================================
-          BARRA PROMOCIONAL
-    ==========================================-->
-
     <div class="promo-bar">
-
-        <div class="promo-conteiner">
-            <p>
-                Frete grátis para entregas locais
-            </p>
-
-            <span class="promo-divider"></span>
-            <p>
-                Parcele em até 6x
-            </p>
-        </div>
+        <p>Frete grátis para entregas locais</p>
+        <span aria-hidden="true"></span>
+        <p>Parcele em até 6x</p>
     </div>
 
-    <!--========================================
-          HEADER
-    ============================================-->
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu">
+        <div class="site-header-bar container">
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="img/menu.png" alt="">
+                <span>Menu</span>
+            </label>
 
-    <Header class="header">
-
-        <div class="header-container">
-            <!-- Menu -->
-             <button class="menu-button" type="button" aria-label="Abrir menu">
-                <img class="menu-button" src="img/menu.png" alt="menu">
-
-                <span class="menu-text">Menu</span>
-             </button>
-
-             <!-- Logo -->
-
-             <a href="index.html" class="logo" aria-label="MA MultMarkas">
+            <a href="index.html" class="logo" aria-label="MA MultMarkas - início">
                 <span class="logo-ma">MA</span>
-                <span class="logo-name">
-                    MULTMARKAS
-                </span>
-             </a>
+                <span class="logo-name">MULTMARKAS</span>
+            </a>
 
-             <!-- Ações do usuário-->
-              <div class="header-actions">
-                <!-- Busca -->
-                 <button class="search-button" type="button">
-                   <img class="lupa" src="img/lupa.png" alt="Busca">
-                    <span>Buscar</span>
-                 </button>
-
-                 <!-- Login -->
-                 <button class="account-button" type="button">
-                   <img class="user-photo" src="img/usuario_login.png" alt="Usuário">
-                   <span>Entrar</span>
-                 </button>
-
-                  <!-- Carrinho -->
-                   <button class="cart-button" type="button">
-                    <img class="carrinho" src="img/carrinho_compras.png" alt="Carrinho">
-                    <span>
-                        Carrinho
-                        <span class="cart-button">(0)</span>
-                    </span>
-
-                   </button>
-              </div>
+            <div class="header-actions">
+                <form class="search" role="search">
+                    <input type="search" name="q" placeholder="Buscar produtos" aria-label="Buscar produtos">
+                </form>
+                <a class="icon-btn" href="pages/login.html">
+                    <img src="img/usuario_login.png" alt="">
+                    <span>Entrar</span>
+                </a>
+                <a class="icon-btn" href="pages/carrinho.html" aria-label="Carrinho">
+                    <img src="img/carrinho_compras.png" alt="">
+                    <span>Carrinho</span>
+                </a>
+            </div>
         </div>
 
-        <!-- ====================
-               NAVEGAÇÃO
-            =====================-->
-        <nav class="main-navigation" aria-label="Navegação principal">
-            <ul>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="container">
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="pages/masculino.html">Masculino</a></li>
+                <li><a href="pages/feminino.html">Feminino</a></li>
+                <li><a href="pages/acessorios.html">Acessórios</a></li>
+                <li><a href="pages/esportes.html">Esportes</a></li>
+                <li><a href="pages/ofertas.html">Ofertas</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="img/colecao_atual.jpg" alt="">
+            <div class="hero-content container">
+                <p class="hero-tag">COLEÇÃO ATUAL</p>
+                <h1 id="hero-title">Vista seu estilo, <em>marque presença.</em></h1>
+                <a href="pages/feminino.html" class="btn">Comprar agora →</a>
+            </div>
+        </section>
+
+        <section class="section container" aria-label="Categorias">
+            <ul class="categories">
                 <li>
-                    <a href="index.html" class="active">
-                        Início
+                    <a class="category-card" href="pages/feminino.html">
+                        <img src="img/moda_feminina.png" alt="">
+                        <div class="category-card-text">
+                            <h3>Moda Feminina</h3>
+                            <span>Ver produtos →</span>
+                        </div>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#">
-                        Masculino
+                    <a class="category-card" href="pages/masculino.html">
+                        <img src="img/moda_masculina.jpg" alt="">
+                        <div class="category-card-text">
+                            <h3>Moda Masculina</h3>
+                            <span>Ver produtos →</span>
+                        </div>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#">
-                        Feminino
+                    <a class="category-card" href="pages/acessorios.html">
+                        <img src="img/acessorios.jpg" alt="">
+                        <div class="category-card-text">
+                            <h3>Acessórios</h3>
+                            <span>Ver produtos →</span>
+                        </div>
                     </a>
                 </li>
-
                 <li>
-                    <a href="#">
-                        Acessórios
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Esportes
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Ofertas
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Sobre
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Contato
+                    <a class="category-card" href="pages/esportes.html">
+                        <img src="img/esportes.jpg" alt="">
+                        <div class="category-card-text">
+                            <h3>Esportes</h3>
+                            <span>Ver produtos →</span>
+                        </div>
                     </a>
                 </li>
             </ul>
-        </nav>
-    </Header>
-
-    <!-- =========================
-           CONTEÚDO PRINCIPAL
-        ==========================-->
-    
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <span class="hero-subtitle">
-                    COLEÇÃO ATUAL
-                </span>
-
-                <h1>
-                    Vista seu estilo, <br>
-                    <span>marque presença.</span>
-                </h1>
-
-                <a href="#" class="primary-button">
-                    Comprar agora
-                    <span>→</span>
-                </a>
-
-            </div>
-
-            <!-- Controles futuros do carrossel -->
-             <button class="hero-arrow hero-arrow-left" type="button" aria-label="Slide anterior">
-                 ‹
-             </button>
-
-             <button class="hero-arrow hero-arrow-right" type="button" aria-label="Proxímo slide">
-                  ›
-             </button>
-
-             <div class="hero-indicators">
-                <button class="active" aria-label="Slide 1"></button>
-                <button aria-label="Slide 2"></button>
-                <button aria-label="Slide 3"></button>
-
-             </div>
-
         </section>
 
-        <!-- ===========================
-                CATEGORIAS
-            ============================-->
-        
-        <section class="categories section-container">
-            <article class="category-card category-feminine">
-                <img src="img/moda_feminina.png"
-                          alt="Moda feminina">
-                <div class="category-content">
-                    <h2>
-                        Moda <br>
-                        Feminina
-                    </h2>
-                    <a href="#">
-                        Ver produtos →
-                    </a>
-                   
-                </div>
-
-            </article>
-
-            <article class="category-card category-masculine">
-                <img src="img/moda_masculina.jpg"
-                            alt="Moda Masculina">
-                <div class="category-content">
-                    <h2>
-                        Moda <br>
-                        Masculina
-                    </h2>
-                    <a href="#">
-                         Ver produtos →
-                    </a>
-                
-                </div>
-
-            </article>
-
-            <article class="category-card category-acessories">
-                <img src="img/acessorios.jpg"
-                     alt="Acessórios">
-                <div class="category-content">
-                    <h2>
-                        Acessórios
-                    </h2>
-                    <a href="#">
-                         Ver produtos →
-                    </a>
-                </div>
-
-            </article>
-
-            <article class="category-card category-sports">
-                 <img src="img/esportes.jpg"
-                     alt="Esportes">
-                <div class="category-content">
-                    <h2>
-                        Esportes
-                    </h2>
-                    <a href="#">
-                         Ver produtos →
-                    </a>
-                </div>
-
-            </article>
-        </section>
-
-        <!-- ============================= 
-               DESTAQUES DA SEMANA 
-            ==============================-->
-
-        <section class="products-section section-container">
+        <section class="section container" aria-labelledby="destaques">
             <div class="section-header">
-                <div>
-                    <span class="section-line"></span>
-                    <h2>
-                        Destaques da Semana
-                    </h2>
-
-                </div>
-
-                <a href="#">
-                     Ver todos →
-                </a>
-
+                <h2 id="destaques">Destaques da Semana</h2>
             </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-1">
+                    <a href="pages/feminino.html#produto-1">
+                        <figure><img src="img/blusa_feminina.jpg" alt="Camiseta feminina Slim" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Camiseta feminina Slim</h3>
+                            <p class="product-card-type">Blusas</p>
+                            <p class="price"><strong>R$ 60,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-2">
+                    <a href="pages/masculino.html#produto-2">
+                        <figure><img src="img/camisa_masculina.jpg" alt="Camiseta básica masculina" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Camiseta básica masculina</h3>
+                            <p class="product-card-type">Camisetas</p>
+                            <p class="price"><strong>R$ 75,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-3">
+                    <a href="pages/acessorios.html#produto-3">
+                        <figure><img src="img/bolsa_feminina.jfif" alt="Bolsa feminina média com carteira" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bolsa feminina média com carteira</h3>
+                            <p class="product-card-type">Bolsas</p>
+                            <p class="price"><strong>R$ 110,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-4">
+                    <a href="pages/esportes.html#produto-4">
+                        <figure><img src="img/bermuda_masculina.jpg" alt="Bermuda esportiva" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bermuda esportiva</h3>
+                            <p class="product-card-type">Bermudas</p>
+                            <p class="price"><strong>R$ 80,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-5">
+                    <a href="pages/feminino.html#produto-5">
+                        <figure><img src="img/vestido_verao.jpg" alt="Vestido verão" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Vestido verão</h3>
+                            <p class="product-card-type">Vestidos</p>
+                            <p class="price"><strong>R$ 85,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-6">
+                    <a href="pages/acessorios.html#produto-6">
+                        <figure><img src="img/bone_masculino.jpg" alt="Boné preto básico" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Boné preto básico</h3>
+                            <p class="product-card-type">Bonés</p>
+                            <p class="price"><strong>R$ 19,99</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-            <div class="products-grid">
-
-                <!-- PRODUTO 1 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                        <img 
-                            src="img/blusa_feminina.jpg"
-                            alt="Camiseta feminina slim"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                            Camiseta feminina Slim 
-                        </h3>
-                        <p class="product-category">
-                            Feminina
-                        </p>
-
-                        <strong>
-                            R$ 60,00
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                  <!-- PRODUTO 2 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                        <img 
-                            src="img/camisa_masculina.jpg"
-                            alt="Camiseta masculina"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                           Camiseta básica Masculina
-                        </h3>
-                        <p class="product-category">
-                            Masculino
-                        </p>
-
-                        <strong>
-                            R$ 75,00
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                  <!-- PRODUTO 3 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                        <img 
-                            src="img/bolsa_feminina.jfif"
-                            alt="Bolsa"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                            Bolsa feminina média com carteira
-                        </h3>
-                        <p class="product-category">
-                            Acessórios
-                        </p>
-
-                        <strong>
-                            R$ 110,00
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                  <!-- PRODUTO 4 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                        <img 
-                            src="img/bermuda_masculina.jpg" 
-                            alt="Bermuda esportiva"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                            Bermuda esportiva
-                        </h3>
-                        <p class="product-category">
-                            Esportes
-                        </p>
-
-                        <strong>
-                            R$ 80,00
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                  <!-- PRODUTO 5 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                         <img 
-                            src="img/vestido_verão.jpg" 
-                            alt="Vestido verao"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                            Vestido verão
-                        </h3>
-                        <p class="product-category">
-                            Feminina
-                        </p>
-
-                        <strong>
-                            R$ 85,00
-                        </strong>
-
-                    </div>
-
-                </article>
-
-                  <!-- PRODUTO 6 -->
-
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-badge">
-                            Destaque
-                        </span>
-
-                        <button 
-                            class="favorite-button"
-                            type="button"
-                            aria-label="Adicionar produto aos favoritos"
-                        >
-                            ♡  
-                        </button>
-
-                        <img 
-                            src="img/bone_masculino.jpg" 
-                            alt="Bone"
-                        >
-
-                    </div>
-
-                    <div class="product-info">
-                        <h3>
-                            Boné preto básico 
-                        </h3>
-                        <p class="product-category">
-                            Acessórios
-                        </p>
-
-                        <strong>
-                            R$ 19,99
-                        </strong>
-
-                    </div>
-
-                </article>
-
+        <section class="section section-tinted" aria-labelledby="ofertas">
+            <div class="container">
+            <div class="section-header">
+                <h2 id="ofertas">Ofertas Imperdíveis</h2>
+                <a class="section-link" href="pages/ofertas.html">Ver todas as ofertas →</a>
+            </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-7">
+                    <a href="pages/feminino.html#produto-7">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/macacao.jpg" alt="Macacão Jolie azul" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Macacão Jolie azul</h3>
+                            <p class="product-card-type">Macacões</p>
+                            <p class="price"><del>R$ 120,90</del> <strong>R$ 79,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-8">
+                    <a href="pages/masculino.html#produto-8">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/bermuda_oferta.jpg" alt="Bermuda alfaiataria sarja" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bermuda alfaiataria sarja</h3>
+                            <p class="product-card-type">Bermudas</p>
+                            <p class="price"><del>R$ 70,00</del> <strong>R$ 50,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-9">
+                    <a href="pages/acessorios.html#produto-9">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/bolsa_oferta.jfif" alt="Bolsa de luxo" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bolsa de luxo</h3>
+                            <p class="product-card-type">Bolsas</p>
+                            <p class="price"><del>R$ 75,90</del> <strong>R$ 54,99</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-10">
+                    <a href="pages/esportes.html#produto-10">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/tenis_feminino.jpg" alt="Tênis Nike Revolution feminino" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Tênis Nike Revolution feminino</h3>
+                            <p class="product-card-type">Calçados</p>
+                            <p class="price"><del>R$ 300,00</del> <strong>R$ 214,99</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-11">
+                    <a href="pages/acessorios.html#produto-11">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/relogio_cassio.jpg" alt="Relógio Cassio masculino" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Relógio Cassio masculino</h3>
+                            <p class="product-card-type">Relógios</p>
+                            <p class="price"><del>R$ 644,00</del> <strong>R$ 599,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-12">
+                    <a href="pages/masculino.html#produto-12">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="img/jaqueta_masculina.jpg" alt="Jaqueta masculina" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Jaqueta masculina</h3>
+                            <p class="product-card-type">Jaquetas</p>
+                            <p class="price"><del>R$ 186,90</del> <strong>R$ 155,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
             </div>
         </section>
 
-        <!-- =========================
-                OFERTAS 
-            ==========================-->
-           <section class="offers-section">
-
-    <div class="section-container">
-
-        <div class="section-header">
-            <div>
-                <span class="section-line"></span>
-
-                <h2>
-                    Ofertas Imperdíveis
-                </h2>
-            </div>
-
-            <a href="#">
-                Ver ofertas →
-            </a>
-        </div>
-
-        <div class="products-grid">
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img src="img/macacao.jpg" alt="macacao feminino">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Macacão Jolie azul
-                    </h3>
-
-                    <p class="product-category">
-                        Feminino
-                    </p>
-
-                    <strong>
-                        <del>R$ 120,90</del>
-                        R$ 79,90
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img src="img/bermuda_oferta.jpg" alt="Bermuda alfaitaria">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Bermuda alfaiataria Sarja
-                    </h3>
-
-                    <p class="product-category">
-                        Masculino
-                    </p>
-
-                    <strong>
-                        <del>R$ 70,00</del>
-                        R$ 50,00
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img src="img/bolsa_oferta.jfif" alt="Bolsa oferta">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Bolsa de luxo 
-                    </h3>
-
-                    <p class="product-category">
-                        Acessórios
-                    </p>
-
-                    <strong>
-                        <del>R$ 75,90</del>
-                        R$ 54,99
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img 
-                    src="img/tenis_feminino.jpg" 
-                    alt="tenis feminino">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Tênis Nike Revolution Feminino
-                    </h3>
-
-                    <p class="product-category">
-                        Esportes
-                    </p>
-
-                    <strong>
-                        <del>R$ 300,00</del>
-                        R$ 214,99
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img src="img/relogio_cassio.jpg" alt="Relogio masculino">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Relógio Cassio Masculino 
-                    </h3>
-
-                    <p class="product-category">
-                        Acessórios
-                    </p>
-
-                    <strong>
-                        <del>R$ 644,00</del>
-                        R$ 599,90
-                    </strong>
-
-                </div>
-
-            </article>
-
-
-            <article class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-badge">
-                        Oferta
-                    </span>
-
-                    <img src="img/jaqueta_masculina.jpg" alt="Jaqueta Masculina">
-
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Jaqueta Masculina
-                    </h3>
-
-                    <p class="product-category">
-                        Masculino
-                    </p>
-
-                    <strong>
-                        <del>R$ 186,90</del>
-                        R$ 155,90
-                    </strong>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-         
-               
-
-            <!-- ========================
-                  MAIS VENDIDOS 
-                =========================-->
-            <section class="products-section section-container">
-
-    <div class="section-header">
-        <div>
-            <span class="section-line"></span>
-
-            <h2>
-                Mais Vendidos
-            </h2>
-        </div>
-
-        <a href="#">
-            Ver ofertas →
-        </a>
-    </div>
-
-    <div class="products-grid">
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/colar.jpg" alt="Colar e brincos">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                    Conjunto com colar e brincos
-                </h3>
-
-                <p class="product-category">
-                    Acessórios
-                </p>
-
-                <strong>
-                    R$ 250,00
-                </strong>
-
-            </div>
-
-        </article>
-
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/conjunto_masculino.png" alt="Conjunto masculino">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                   Conjunto Verão Bege
-                </h3>
-
-                <p class="product-category">
-                    Masculino
-                </p>
-
-                <strong>
-                    R$ 126,00
-                </strong>
-
-            </div>
-
-        </article>
-
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/rasteirinha_brilho.png" alt="Rasteirinha">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                    Sandália Rasteira com Brilho
-                </h3>
-
-                <p class="product-category">
-                    Feminino
-                </p>
-
-                <strong>
-                    R$ 70,90
-                </strong>
-
-            </div>
-
-        </article>
-
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/oculos_sol.jpg" alt="oculos de sol masculino">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                    Óculos de sol aviador Masculino
-                </h3>
-
-                <p class="product-category">
-                    Acessórios
-                </p>
-
-                <strong>
-                    R$ 20,90
-                </strong>
-
-            </div>
-
-        </article>
-
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/calca_feminina.jpg" alt="Calça Feminina">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                    Calça Jeans Wide Leg
-                </h3>
-
-                <p class="product-category">
-                    Feminino
-                </p>
-
-                <strong>
-                    R$ 120,90
-                </strong>
-
-            </div>
-
-        </article>
-
-
-        <article class="product-card">
-
-            <div class="product-image">
-
-                <span class="product-badge">
-                    Mais vendido
-                </span>
-
-                <img src="img/camisa_polo.jpg" alt="camisa polo">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3>
-                    Camisa Polo manga longa
-                </h3>
-
-                <p class="product-category">
-                   Masculino
-                </p>
-
-                <strong>
-                    R$ 110,90
-                </strong>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-           
-
-             <!-- =================================================
-             ESTILO MA / VISTA SEU ESTILO
-        ================================================== -->
-
-        <section class="style-section section-container">
-
+        <section class="section container" aria-labelledby="vendidos">
             <div class="section-header">
-
-                <div>
-
-                    <span class="section-line"></span>
-
-                    <h2>
-                        #VistaSeuEstilo
-                    </h2>
-
-                </div>
-
+                <h2 id="vendidos">Mais Vendidos</h2>
             </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-13">
+                    <a href="pages/acessorios.html#produto-13">
+                        <figure><img src="img/colar.jpg" alt="Conjunto com colar e brincos" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Conjunto com colar e brincos</h3>
+                            <p class="product-card-type">Joias</p>
+                            <p class="price"><strong>R$ 250,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-14">
+                    <a href="pages/masculino.html#produto-14">
+                        <figure><img src="img/conjunto_masculino.png" alt="Conjunto verão bege" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Conjunto verão bege</h3>
+                            <p class="product-card-type">Conjuntos</p>
+                            <p class="price"><strong>R$ 126,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-15">
+                    <a href="pages/feminino.html#produto-15">
+                        <figure><img src="img/rasteirinha_brilho.png" alt="Sandália rasteira com brilho" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Sandália rasteira com brilho</h3>
+                            <p class="product-card-type">Calçados</p>
+                            <p class="price"><strong>R$ 70,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-16">
+                    <a href="pages/acessorios.html#produto-16">
+                        <figure><img src="img/oculos_sol.jpg" alt="Óculos de sol aviador masculino" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Óculos de sol aviador masculino</h3>
+                            <p class="product-card-type">Óculos</p>
+                            <p class="price"><strong>R$ 20,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-17">
+                    <a href="pages/feminino.html#produto-17">
+                        <figure><img src="img/calca_feminina.jpg" alt="Calça jeans wide leg" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Calça jeans wide leg</h3>
+                            <p class="product-card-type">Calças</p>
+                            <p class="price"><strong>R$ 120,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-18">
+                    <a href="pages/masculino.html#produto-18">
+                        <figure><img src="img/camisa_polo.jpg" alt="Camisa polo manga longa" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Camisa polo manga longa</h3>
+                            <p class="product-card-type">Camisas</p>
+                            <p class="price"><strong>R$ 110,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-
-            <div class="style-content">
-
-                <div class="style-text">
-
-                    <span>
-                        MA MULTMARKAS
-                    </span>
-
-                    <h2>
-                        Mais que moda,<br>
-                        é estilo de vida.
-                    </h2>
-
-                    <p>
-                        Inspire-se, escolha seu estilo
-                        e vista aquilo que representa você.
-                    </p>
-
-                </div>
-
-
-                <div class="style-gallery">
-
-                    <img 
-                        src="img/look_um.jpg"
-                        alt="Look recomendado por MA MultMarkas"
-                    >
-
-                    <img 
-                        src="img/look_dois.jpg"
-                        alt="Look recomendado MA MultMarkas"
-                    >
-
-                    <img 
-                        src="img/look_tres.jpg"
-                        alt="Inspiração de look MA MultMarkas"
-                    >
-
-                    <img 
-                        src="img/look_quatro.jpg"
-                        alt="Inspiração de look "
-                    >
-
-                </div>
-
+        <section class="section container" aria-labelledby="estilo">
+            <div class="section-header">
+                <h2 id="estilo">#VistaSeuEstilo</h2>
             </div>
-
+            <div class="style-block">
+                <div class="style-block-text">
+                    <span>MA MULTMARKAS</span>
+                    <h3>Mais que moda, é estilo de vida.</h3>
+                    <p>Inspire-se, escolha seu estilo e vista aquilo que representa você.</p>
+                </div>
+                <div class="style-block-gallery">
+                    <img src="img/look_um.jpg" alt="Look recomendado pela MA MultMarkas" loading="lazy">
+                    <img src="img/look_dois.jpg" alt="Look recomendado pela MA MultMarkas" loading="lazy">
+                    <img src="img/look_tres.jpg" alt="Inspiração de look" loading="lazy">
+                    <img src="img/look_quatro.jpg" alt="Inspiração de look" loading="lazy">
+                </div>
+            </div>
         </section>
     </main>
 
-     <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-
-            <!-- Institucional -->
-
-            <div class="footer-column">
-
-                <h2>
-                    Institucional
-                </h2>
-
+    <footer class="site-footer">
+        <div class="site-footer-grid container">
+            <section>
+                <h2>Institucional</h2>
                 <ul>
-
-                    <li>
-                        <a href="#">
-                            Quem Somos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Trocas e Devoluções
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Política de Privacidade
-                        </a>
-                    </li>
-
+                    <li><a href="pages/sobre.html">Quem somos</a></li>
+                    <li><a href="pages/sobre.html#trocas">Trocas e devoluções</a></li>
+                    <li><a href="pages/sobre.html#privacidade">Política de privacidade</a></li>
                 </ul>
-
-            </div>
-
-
-            <!-- Atendimento -->
-
-            <div class="footer-column">
-
-                <h2>
-                    Atendimento
-                </h2>
-
-                <ul>
-
-                    <li>
-                        WhatsApp: (87) 98172-0047
-                    </li>
-
-                    <li>
-                        Rua Deolinda Silveste, 70A
-                    </li>
-
-                    <li>
-                        Horário de atendimento 8:00 às 12:00 e 14:00 às 18:00
-                    </li>
-
+            </section>
+            <section>
+                <h2>Atendimento</h2>
+                <address>
+                    <p>WhatsApp: (87) 98172-0047</p>
+                    <p>Rua Deolinda Silveste, 70A</p>
+                    <p>Atendimento: 8h às 12h e 14h às 18h</p>
+                </address>
+            </section>
+            <section>
+                <h2>Formas de pagamento</h2>
+                <ul class="payment-methods">
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>Elo</li>
+                    <li>Pix</li>
                 </ul>
-
-            </div>
-
-
-            <!-- Pagamentos -->
-
-            <div class="footer-column">
-
-                <h2>
-                    Formas de pagamento
-                </h2>
-
-                <div class="payment-methods">
-
-                    <span>
-                        Visa
-                    </span>
-
-                    <span>
-                        Mastercard
-                    </span>
-
-                    <span>
-                        Elo
-                    </span>
-
-                    <span>
-                        Pix
-                    </span>
-
-                </div>
-
-            </div>
-
+            </section>
         </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 MA MultMarkas Store. Todos os direitos reservados.
-            </p>
-
-        </div>
-
+        <p class="site-footer-copy">© 2026 MA MultMarkas Store. Todos os direitos reservados.</p>
     </footer>
-
-
-    <!-- JavaScript será integrado posteriormente -->
-    <script src="js/script.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | MA MultMarkas</title>
+    <meta name="description" content="Acesse sua conta na MA MultMarkas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="promo-bar">
+        <p>Frete grátis para entregas locais</p>
+        <span aria-hidden="true"></span>
+        <p>Parcele em até 6x</p>
+    </div>
+
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu">
+        <div class="site-header-bar container">
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="../img/menu.png" alt="">
+                <span>Menu</span>
+            </label>
+
+            <a href="../index.html" class="logo" aria-label="MA MultMarkas - início">
+                <span class="logo-ma">MA</span>
+                <span class="logo-name">MULTMARKAS</span>
+            </a>
+
+            <div class="header-actions">
+                <form class="search" role="search">
+                    <input type="search" name="q" placeholder="Buscar produtos" aria-label="Buscar produtos">
+                </form>
+                <a class="icon-btn" href="../pages/login.html">
+                    <img src="../img/usuario_login.png" alt="">
+                    <span>Entrar</span>
+                </a>
+                <a class="icon-btn" href="../pages/carrinho.html" aria-label="Carrinho">
+                    <img src="../img/carrinho_compras.png" alt="">
+                    <span>Carrinho</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="container">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/masculino.html">Masculino</a></li>
+                <li><a href="../pages/feminino.html">Feminino</a></li>
+                <li><a href="../pages/acessorios.html">Acessórios</a></li>
+                <li><a href="../pages/esportes.html">Esportes</a></li>
+                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section container">
+            <div class="auth-card">
+                <h1>Entrar</h1>
+                <p>Acesse sua conta para acompanhar pedidos e comprar mais rápido.</p>
+                <form action="#" method="post">
+                    <div class="field">
+                        <label class="field-label" for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label class="field-label" for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+                    </div>
+                    <div class="auth-options">
+                        <label><input type="checkbox" name="lembrar"> Lembrar de mim</label>
+                        <a href="contato.html">Esqueci minha senha</a>
+                    </div>
+                    <button class="btn btn-block" type="submit">Entrar</button>
+                </form>
+                <p class="auth-footer">Ainda não tem conta? <a href="contato.html">Fale com a gente</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-grid container">
+            <section>
+                <h2>Institucional</h2>
+                <ul>
+                    <li><a href="../pages/sobre.html">Quem somos</a></li>
+                    <li><a href="../pages/sobre.html#trocas">Trocas e devoluções</a></li>
+                    <li><a href="../pages/sobre.html#privacidade">Política de privacidade</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Atendimento</h2>
+                <address>
+                    <p>WhatsApp: (87) 98172-0047</p>
+                    <p>Rua Deolinda Silveste, 70A</p>
+                    <p>Atendimento: 8h às 12h e 14h às 18h</p>
+                </address>
+            </section>
+            <section>
+                <h2>Formas de pagamento</h2>
+                <ul class="payment-methods">
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>Elo</li>
+                    <li>Pix</li>
+                </ul>
+            </section>
+        </div>
+        <p class="site-footer-copy">© 2026 MA MultMarkas Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

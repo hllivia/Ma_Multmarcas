@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | MA MultMarkas</title>
+    <meta name="description" content="Seu carrinho de compras.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="promo-bar">
+        <p>Frete grátis para entregas locais</p>
+        <span aria-hidden="true"></span>
+        <p>Parcele em até 6x</p>
+    </div>
+
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu">
+        <div class="site-header-bar container">
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="../img/menu.png" alt="">
+                <span>Menu</span>
+            </label>
+
+            <a href="../index.html" class="logo" aria-label="MA MultMarkas - início">
+                <span class="logo-ma">MA</span>
+                <span class="logo-name">MULTMARKAS</span>
+            </a>
+
+            <div class="header-actions">
+                <form class="search" role="search">
+                    <input type="search" name="q" placeholder="Buscar produtos" aria-label="Buscar produtos">
+                </form>
+                <a class="icon-btn" href="../pages/login.html">
+                    <img src="../img/usuario_login.png" alt="">
+                    <span>Entrar</span>
+                </a>
+                <a class="icon-btn" href="../pages/carrinho.html" aria-label="Carrinho">
+                    <img src="../img/carrinho_compras.png" alt="">
+                    <span>Carrinho</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="container">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/masculino.html">Masculino</a></li>
+                <li><a href="../pages/feminino.html">Feminino</a></li>
+                <li><a href="../pages/acessorios.html">Acessórios</a></li>
+                <li><a href="../pages/esportes.html">Esportes</a></li>
+                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Início</a></li>
+                <li aria-current="page">Carrinho</li>
+            </ol>
+                <h1>Carrinho</h1>
+                <p>Revise os itens antes de finalizar o pedido.</p>
+            </div>
+        </section>
+
+        <section class="container cart-empty" aria-label="Itens do carrinho">
+            <img src="../img/carrinho_compras.png" alt="">
+            <h2>Seu carrinho está vazio</h2>
+            <p>Escolha seus produtos favoritos e eles aparecerão aqui.</p>
+            <div class="cart-empty-actions">
+                <a class="btn" href="feminino.html">Moda feminina</a>
+                <a class="btn btn-outline" href="masculino.html">Moda masculina</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-grid container">
+            <section>
+                <h2>Institucional</h2>
+                <ul>
+                    <li><a href="../pages/sobre.html">Quem somos</a></li>
+                    <li><a href="../pages/sobre.html#trocas">Trocas e devoluções</a></li>
+                    <li><a href="../pages/sobre.html#privacidade">Política de privacidade</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Atendimento</h2>
+                <address>
+                    <p>WhatsApp: (87) 98172-0047</p>
+                    <p>Rua Deolinda Silveste, 70A</p>
+                    <p>Atendimento: 8h às 12h e 14h às 18h</p>
+                </address>
+            </section>
+            <section>
+                <h2>Formas de pagamento</h2>
+                <ul class="payment-methods">
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>Elo</li>
+                    <li>Pix</li>
+                </ul>
+            </section>
+        </div>
+        <p class="site-footer-copy">© 2026 MA MultMarkas Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

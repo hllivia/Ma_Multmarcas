@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessórios | MA MultMarkas</title>
+    <meta name="description" content="Bolsas, joias, relógios, óculos e bonés para completar o look.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <div class="promo-bar">
+        <p>Frete grátis para entregas locais</p>
+        <span aria-hidden="true"></span>
+        <p>Parcele em até 6x</p>
+    </div>
+
+    <header class="site-header">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Abrir menu">
+        <div class="site-header-bar container">
+            <label for="menu-toggle" class="menu-toggle">
+                <img src="../img/menu.png" alt="">
+                <span>Menu</span>
+            </label>
+
+            <a href="../index.html" class="logo" aria-label="MA MultMarkas - início">
+                <span class="logo-ma">MA</span>
+                <span class="logo-name">MULTMARKAS</span>
+            </a>
+
+            <div class="header-actions">
+                <form class="search" role="search">
+                    <input type="search" name="q" placeholder="Buscar produtos" aria-label="Buscar produtos">
+                </form>
+                <a class="icon-btn" href="../pages/login.html">
+                    <img src="../img/usuario_login.png" alt="">
+                    <span>Entrar</span>
+                </a>
+                <a class="icon-btn" href="../pages/carrinho.html" aria-label="Carrinho">
+                    <img src="../img/carrinho_compras.png" alt="">
+                    <span>Carrinho</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="container">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/masculino.html">Masculino</a></li>
+                <li><a href="../pages/feminino.html">Feminino</a></li>
+                <li><a href="../pages/acessorios.html" aria-current="page">Acessórios</a></li>
+                <li><a href="../pages/esportes.html">Esportes</a></li>
+                <li><a href="../pages/ofertas.html">Ofertas</a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Início</a></li>
+                <li aria-current="page">Acessórios</li>
+            </ol>
+                <h1>Acessórios</h1>
+                <p>Bolsas, joias, relógios, óculos e bonés para completar o look.</p>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Tipos de Acessórios">
+            <div class="container chips">
+                <a href="#joias">Joias</a>
+                <a href="#bolsas">Bolsas</a>
+                <a href="#relogios-oculos">Relógios e óculos</a>
+                <a href="#bones">Bonés</a>
+            </div>
+        </nav>
+
+        <section class="section container" id="joias" aria-labelledby="h-joias">
+            <div class="section-header">
+                <h2 id="h-joias">Joias</h2>
+            </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-13">
+                    <a href="#produto-13">
+                        <figure><img src="../img/colar.jpg" alt="Conjunto com colar e brincos" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Conjunto com colar e brincos</h3>
+                            <p class="product-card-type">Joias</p>
+                            <p class="price"><strong>R$ 250,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section container" id="bolsas" aria-labelledby="h-bolsas">
+            <div class="section-header">
+                <h2 id="h-bolsas">Bolsas</h2>
+            </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-3">
+                    <a href="#produto-3">
+                        <figure><img src="../img/bolsa_feminina.jfif" alt="Bolsa feminina média com carteira" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bolsa feminina média com carteira</h3>
+                            <p class="product-card-type">Bolsas</p>
+                            <p class="price"><strong>R$ 110,00</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-9">
+                    <a href="#produto-9">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="../img/bolsa_oferta.jfif" alt="Bolsa de luxo" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Bolsa de luxo</h3>
+                            <p class="product-card-type">Bolsas</p>
+                            <p class="price"><del>R$ 75,90</del> <strong>R$ 54,99</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section container" id="relogios-oculos" aria-labelledby="h-relogios-oculos">
+            <div class="section-header">
+                <h2 id="h-relogios-oculos">Relógios e óculos</h2>
+            </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-11">
+                    <a href="#produto-11">
+                        <span class="badge badge-sale">Oferta</span><figure><img src="../img/relogio_cassio.jpg" alt="Relógio Cassio masculino" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Relógio Cassio masculino</h3>
+                            <p class="product-card-type">Relógios</p>
+                            <p class="price"><del>R$ 644,00</del> <strong>R$ 599,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card" id="item-16">
+                    <a href="#produto-16">
+                        <figure><img src="../img/oculos_sol.jpg" alt="Óculos de sol aviador masculino" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Óculos de sol aviador masculino</h3>
+                            <p class="product-card-type">Óculos</p>
+                            <p class="price"><strong>R$ 20,90</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section container" id="bones" aria-labelledby="h-bones">
+            <div class="section-header">
+                <h2 id="h-bones">Bonés</h2>
+            </div>
+            <ul class="product-grid">
+                <li class="product-card" id="item-6">
+                    <a href="#produto-6">
+                        <figure><img src="../img/bone_masculino.jpg" alt="Boné preto básico" loading="lazy"></figure>
+                        <div class="product-card-info">
+                            <h3>Boné preto básico</h3>
+                            <p class="product-card-type">Bonés</p>
+                            <p class="price"><strong>R$ 19,99</strong></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="modal" id="produto-3" role="dialog" aria-modal="true" aria-labelledby="titulo-3">
+        <a class="modal-backdrop" href="#item-3" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-3" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/bolsa_feminina.jfif" alt="Bolsa feminina média com carteira"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Bolsas</p>
+                <h2 id="titulo-3">Bolsa feminina média com carteira</h2>
+                <p class="price"><strong>R$ 110,00</strong></p>
+                <p>Bolsa de tamanho médio com compartimentos internos e carteira inclusa. Alça ajustável para usar no ombro ou transversal.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="3">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-3">Quantidade</label>
+                        <input type="number" id="qtd-3" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" id="produto-6" role="dialog" aria-modal="true" aria-labelledby="titulo-6">
+        <a class="modal-backdrop" href="#item-6" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-6" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/bone_masculino.jpg" alt="Boné preto básico"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Bonés</p>
+                <h2 id="titulo-6">Boné preto básico</h2>
+                <p class="price"><strong>R$ 19,99</strong></p>
+                <p>Boné preto com aba curva e regulagem traseira. Tamanho único.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="6">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-6">Quantidade</label>
+                        <input type="number" id="qtd-6" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" id="produto-9" role="dialog" aria-modal="true" aria-labelledby="titulo-9">
+        <a class="modal-backdrop" href="#item-9" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-9" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/bolsa_oferta.jfif" alt="Bolsa de luxo"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Bolsas</p>
+                <h2 id="titulo-9">Bolsa de luxo</h2>
+                <p class="price"><del>R$ 75,90</del> <strong>R$ 54,99</strong></p>
+                <p>Bolsa sofisticada com acabamento premium e ferragens douradas. Espaço interno generoso.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="9">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-9">Quantidade</label>
+                        <input type="number" id="qtd-9" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" id="produto-11" role="dialog" aria-modal="true" aria-labelledby="titulo-11">
+        <a class="modal-backdrop" href="#item-11" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-11" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/relogio_cassio.jpg" alt="Relógio Cassio masculino"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Relógios</p>
+                <h2 id="titulo-11">Relógio Cassio masculino</h2>
+                <p class="price"><del>R$ 644,00</del> <strong>R$ 599,90</strong></p>
+                <p>Relógio masculino resistente, com visor de fácil leitura e pulseira durável.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="11">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-11">Quantidade</label>
+                        <input type="number" id="qtd-11" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" id="produto-13" role="dialog" aria-modal="true" aria-labelledby="titulo-13">
+        <a class="modal-backdrop" href="#item-13" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-13" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/colar.jpg" alt="Conjunto com colar e brincos"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Joias</p>
+                <h2 id="titulo-13">Conjunto com colar e brincos</h2>
+                <p class="price"><strong>R$ 250,00</strong></p>
+                <p>Conjunto de colar e brincos com banho dourado e brilho delicado. Presenteie ou combine com seus looks favoritos.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="13">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-13">Quantidade</label>
+                        <input type="number" id="qtd-13" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <div class="modal" id="produto-16" role="dialog" aria-modal="true" aria-labelledby="titulo-16">
+        <a class="modal-backdrop" href="#item-16" tabindex="-1" aria-hidden="true"></a>
+        <article class="modal-dialog">
+            <a class="modal-close" href="#item-16" aria-label="Fechar">×</a>
+            <div class="modal-media"><img src="../img/oculos_sol.jpg" alt="Óculos de sol aviador masculino"></div>
+            <div class="modal-body">
+                <p class="product-card-type">Óculos</p>
+                <h2 id="titulo-16">Óculos de sol aviador masculino</h2>
+                <p class="price"><strong>R$ 20,90</strong></p>
+                <p>Óculos de sol modelo aviador com lentes escuras e proteção UV. Armação leve e resistente.</p>
+                <form class="modal-form" action="carrinho.html">
+                    <input type="hidden" name="produto" value="16">
+                    <div class="field field-qty">
+                        <label class="field-label" for="qtd-16">Quantidade</label>
+                        <input type="number" id="qtd-16" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                    <button class="btn" type="submit">Adicionar ao carrinho</button>
+                </form>
+            </div>
+        </article>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer-grid container">
+            <section>
+                <h2>Institucional</h2>
+                <ul>
+                    <li><a href="../pages/sobre.html">Quem somos</a></li>
+                    <li><a href="../pages/sobre.html#trocas">Trocas e devoluções</a></li>
+                    <li><a href="../pages/sobre.html#privacidade">Política de privacidade</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Atendimento</h2>
+                <address>
+                    <p>WhatsApp: (87) 98172-0047</p>
+                    <p>Rua Deolinda Silveste, 70A</p>
+                    <p>Atendimento: 8h às 12h e 14h às 18h</p>
+                </address>
+            </section>
+            <section>
+                <h2>Formas de pagamento</h2>
+                <ul class="payment-methods">
+                    <li>Visa</li>
+                    <li>Mastercard</li>
+                    <li>Elo</li>
+                    <li>Pix</li>
+                </ul>
+            </section>
+        </div>
+        <p class="site-footer-copy">© 2026 MA MultMarkas Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
